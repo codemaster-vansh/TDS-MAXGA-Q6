@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            overflow: hidden;
+        }
+        
+        .error-container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+        
+        .suggestions {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .suggestions h2 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .suggestions ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .suggestions li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .suggestions li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: rgba(255, 255, 255, 0.3);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            margin-top: 20px;
+        }
+        
+        .button:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .email {
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .email a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .email a:hover {
+            border-bottom-color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <span class="emoji">🔍</span>
+        <div class="error-code">404</div>
+        <h1>Oops! Page Not Found</h1>
+        <p>The page you're looking for seems to have wandered off into the digital wilderness.</p>
+        <p>Don't worry, even the best explorers get lost sometimes!</p>
+        
+        <div class="suggestions">
+            <h2>💡 Here's what you can do:</h2>
+            <ul>
+                <li>Check the URL for any typos or errors</li>
+                <li>Use the button below to return to the home page</li>
+                <li>Try searching for what you need from the homepage</li>
+                <li>Contact us if you think this is an error on our end</li>
+            </ul>
+        </div>
+        
+        <a href="/" class="button">🏠 Take Me Home</a>
+        
+        <div class="email">
+            Need help? Reach out to us at<br>
+            📧 <a href="mailto:24f3002271@ds.study.iitm.ac.in">24f3002271@ds.study.iitm.ac.in</a>
+        </div>
+    </div>
+</body>
+</html>
